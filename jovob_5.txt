@@ -1,0 +1,11 @@
+docker login
+docker build exam_bot .
+docker run -it exam_bot .
+pip freeze req.txt
+pip install -r req.txt
+docker exec -it exxam_bot psql -U postgres
+create database users;
+docker tag exam_bot najmitdinovavaz/exam_bot
+docker push najmitdinovavaz/exam_bot
+docker run -it --name cont_my exam_bot
+docker compose up
